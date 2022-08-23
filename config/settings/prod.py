@@ -2,8 +2,11 @@ from .base import *
 
 ALLOWED_HOSTS = ['3.39.163.171']
 
+DEBUG = False
+
 STATIC_ROOT = BASE_DIR / 'static/'
 STATICFILES_DIRS = []
+
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
