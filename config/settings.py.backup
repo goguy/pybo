@@ -77,10 +77,32 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'HOST': 'localhost',
+#         'NAME':'pybodb',
+#         'USER': 'postgres',
+#         'PASSWORD' : '12345',
+#         'PORT' : 5432
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': 'ls-b9a6b15c7619fb1859ed7abccf36ea2967b9a8ee.c36vvyyhk7pk.ap-northeast-2.rds.amazonaws.com',
+        'NAME':'pybodb',
+        'USER': 'dbmasteruser',
+        'PASSWORD' : 'P9I^=1RTTl^ya]I{*Y[~2u[.tVusgoQe',
+        'PORT' : 5432
     }
 }
 
@@ -115,7 +137,8 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
+# USE_TZ = True #DATABASES-django.db.backends.postgresql_psycopg2 or version up
 
 
 # Static files (CSS, JavaScript, Images)
