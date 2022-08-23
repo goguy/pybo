@@ -8,7 +8,7 @@ ALLOWED_HOSTS = ['3.39.163.171']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'HOST': 'ls-b9a6b15c7619fb1859ed7abccf36ea2967b9a8ee.c36vvyyhk7pk.ap-northeast-2.rds.amazonaws.com',
         'NAME':'pybodb',
         'USER': 'dbmasteruser',
